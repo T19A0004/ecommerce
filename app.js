@@ -277,7 +277,9 @@ function setCartItems() {
               <div class = "cart-item-category">For ${cart[i].type}</div>
               <span class = "cart-item-price">Price: ${cart[i].price}$</span>
               </div>
+              <div>
               <button data-id="${cart[i].id}" type = "button" class = "cart-item-del-btn">X</button>
+              </div>
           </div>`;
       products += product;
     }

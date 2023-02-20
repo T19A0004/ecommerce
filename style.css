@@ -131,10 +131,9 @@ h4 {
 }
 
 .cart-item-del-btn {
-  margin-left: 50%;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 40px;
+  margin: 0;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   font-size: 20px;
   font-weight: bold;
@@ -250,7 +249,7 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 242px;
+  width: 100%;
 }
 
 li p {
@@ -409,6 +408,30 @@ aside {
     min-height: 50px;
     /* Specifying the order so the nav appears as the first item in the flex container */
     order: 1;
+  }
+
+  nav ul {
+    width: 100%;
+  }
+
+  .modal {
+    width: 80%;
+  }
+
+  .cart-item-info {
+    height: 165px;
+  }
+
+  .cart-item-del-btn {
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    box-shadow: 2px 2px 0 #b31105, -2px -2px 0 #b31105, -2px 2px 0 #b31105,
+      2px -2px 0 #b31105;
+  }
+
+  .cart-item-del-btn:hover {
+    box-shadow: 5px 2px 0 #b31105, -5px -2px 0 #b31105;
   }
 
   aside {
