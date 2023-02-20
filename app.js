@@ -270,14 +270,15 @@ function setCartItems() {
     for (let i = 0; i < cart.length; i++) {
       total += cart[i].price;
       let product = `
-          <img src = "./images/${cart[i].image}" alt = "product image">
           <div class = "cart-item-info">
+              <img class= "cart-item-image" src = "./images/${cart[i].image}" alt = "product image">
+              <div>
               <h3 class = "cart-item-name">${cart[i].name}</h3>
-              <span class = "cart-item-category">${cart[i].type}</span>
-              <span class = "cart-item-price">${cart[i].price}</span>
-          </div>
-        
-          <button data-id="${cart[i].id}" type = "button" class = "cart-item-del-btn">x</button>`;
+              <span class = "cart-item-category">For ${cart[i].type}</span>
+              <span class = "cart-item-price">${cart[i].price}$</span>
+              </div>
+              <button data-id="${cart[i].id}" type = "button" class = "cart-item-del-btn">X</button>
+          </div>`;
       products += product;
     }
 

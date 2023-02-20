@@ -90,6 +90,7 @@ h4 {
 
 .modal {
   overflow: scroll;
+  overflow-x: hidden;
   margin: 0 auto;
   width: 60%;
   height: 70%;
@@ -99,6 +100,56 @@ h4 {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+}
+
+/* Cart Items */
+.cart-item-info {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 90%;
+  height: 150px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.cart-item-info:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cart-item-del-btn {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  background: white;
+  border: 2px solid #b31105;
+  box-shadow: 5px 5px 0 #b31105, -5px -5px 0 #b31105, -5px 5px 0 #b31105,
+    5px -5px 0 #b31105;
+  transition: 500ms ease-in-out;
+}
+
+.cart-item-del-btn:hover {
+  box-shadow: 10px 5px 0 #b31105, -10px -5px 0 #b31105;
+}
+
+.cart-item-del-btn:focus {
+  outline: none;
+}
+
+.cart-item-price {
+  color: #00b706;
+}
+
+#cart-total-value {
+  color: #00b706;
 }
 
 /* Add Cart button */

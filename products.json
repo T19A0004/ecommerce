@@ -2,189 +2,189 @@
   {
     "id": 1,
     "type": "Men",
-    "name": "Suit Man",
+    "name": "Armani",
     "price": 5000,
     "image": "m-product-1.png"
   },
   {
     "id": 2,
     "type": "Men",
-    "name": "Suit Man",
+    "name": "Brions",
     "price": 6000,
     "image": "m-product-2.png"
   },
   {
     "id": 3,
     "type": "Men",
-    "name": "Suit Man",
+    "name": "Brooks Brothers",
     "price": 5500,
     "image": "m-product-3.png"
   },
   {
     "id": 4,
     "type": "Men",
-    "name": "Suit Man",
+    "name": "Burberry",
     "price": 5000,
     "image": "m-product-4.png"
   },
   {
     "id": 5,
     "type": "Men",
-    "name": "Suit Man",
+    "name": "Canali",
     "price": 6000,
     "image": "m-product-5.png"
   },
   {
     "id": 6,
     "type": "Men",
-    "name": "Suit Man",
+    "name": "Drake's",
     "price": 5500,
     "image": "m-product-6.png"
   },
   {
     "id": 7,
     "type": "Women",
-    "name": "Suit Women",
+    "name": "Dries Van Note ",
     "price": 5000,
     "image": "w-product-1.jpg"
   },
   {
     "id": 8,
     "type": "Women",
-    "name": "Suit Women",
+    "name": "Gucci",
     "price": 6000,
     "image": "w-product-2.jpg"
   },
   {
     "id": 9,
     "type": "Women",
-    "name": "Suit Women",
+    "name": "Givenchy",
     "price": 5500,
     "image": "w-product-3.jpg"
   },
   {
     "id": 10,
     "type": "Women",
-    "name": "Suit Women",
+    "name": "J.Crew",
     "price": 5000,
     "image": "w-product-4.jpg"
   },
   {
     "id": 11,
     "type": "Women",
-    "name": "Suit Women",
+    "name": "Oxxford",
     "price": 6000,
     "image": "w-product-5.jpg"
   },
   {
     "id": 12,
     "type": "Women",
-    "name": "Suit Women",
+    "name": "Paul Smith",
     "price": 5500,
     "image": "w-product-6.jpg"
   },
   {
     "id": 13,
     "type": "Kids",
-    "name": "Suit Kids",
+    "name": "Reiss",
     "price": 5000,
     "image": "K-product-1.jpg"
   },
   {
     "id": 14,
     "type": "Kids",
-    "name": "Suit Kids",
+    "name": "Armani",
     "price": 6000,
     "image": "K-product-2.jpg"
   },
   {
     "id": 15,
     "type": "Kids",
-    "name": "Suit Kids",
+    "name": "Brioni",
     "price": 5500,
     "image": "K-product-3.jpg"
   },
   {
     "id": 16,
     "type": "Kids",
-    "name": "Suit Kids",
+    "name": "Canali",
     "price": 5000,
     "image": "K-product-4.jpg"
   },
   {
     "id": 17,
     "type": "Kids",
-    "name": "Suit Kids",
+    "name": "Darke's",
     "price": 6000,
     "image": "K-product-5.jpg"
   },
   {
     "id": 18,
     "type": "Kids",
-    "name": "Suit Kids",
+    "name": "Gucci",
     "price": 5500,
     "image": "K-product-6.jpg"
   },
   {
     "id": 19,
     "type": "Men",
-    "name": "Suit Man",
+    "name": "Oxxford",
     "price": 5000,
     "image": "m-product-7.png"
   },
   {
     "id": 20,
     "type": "Men",
-    "name": "Suit Man",
+    "name": "Burberry",
     "price": 6000,
     "image": "m-product-8.png"
   },
   {
     "id": 21,
     "type": "Men",
-    "name": "Suit Man",
+    "name": "Zara",
     "price": 5500,
     "image": "m-product-9.png"
   },
   {
     "id": 22,
     "type": "Women",
-    "name": "Suit Women",
+    "name": "Everlane",
     "price": 5000,
     "image": "w-product-7.jpg"
   },
   {
     "id": 23,
     "type": "Women",
-    "name": "Suit Women",
+    "name": "Zara",
     "price": 6000,
     "image": "w-product-8.jpg"
   },
   {
     "id": 24,
     "type": "Women",
-    "name": "Suit Women",
+    "name": "Reiss",
     "price": 5500,
     "image": "w-product-9.jpg"
   },
   {
     "id": 25,
     "type": "Kids",
-    "name": "Suit Kids",
+    "name": "Paul Smith",
     "price": 5000,
     "image": "K-product-7.jpg"
   },
   {
     "id": 26,
     "type": "Kids",
-    "name": "Suit Kids",
+    "name": "Gucci",
     "price": 6000,
     "image": "K-product-8.jpg"
   },
   {
     "id": 27,
     "type": "Kids",
-    "name": "Suit Kids",
+    "name": "Reiss",
     "price": 5500,
     "image": "K-product-9.jpg"
   }
