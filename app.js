@@ -274,8 +274,8 @@ function setCartItems() {
               <img class= "cart-item-image" src = "./images/${cart[i].image}" alt = "product image">
               <div>
               <h3 class = "cart-item-name">${cart[i].name}</h3>
-              <span class = "cart-item-category">For ${cart[i].type}</span>
-              <span class = "cart-item-price">${cart[i].price}$</span>
+              <div class = "cart-item-category">For ${cart[i].type}</div>
+              <span class = "cart-item-price">Price: ${cart[i].price}$</span>
               </div>
               <button data-id="${cart[i].id}" type = "button" class = "cart-item-del-btn">X</button>
           </div>`;

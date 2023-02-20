@@ -116,8 +116,18 @@ h4 {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
+.cart-item-name {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
 .cart-item-info:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cart-item-category {
+  color: black;
+  margin-bottom: 10px;
 }
 
 .cart-item-del-btn {
