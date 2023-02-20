@@ -109,7 +109,7 @@ h4 {
   border: 1px solid black;
   border-radius: 5px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
   width: 90%;
   height: 150px;
