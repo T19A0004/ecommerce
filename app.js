@@ -272,7 +272,7 @@ function setCartItems() {
       let product = `
           <div class = "cart-item-info">
               <img class= "cart-item-image" src = "./images/${cart[i].image}" alt = "product image">
-              <div>
+              <div class="info">
               <h3 class = "cart-item-name">${cart[i].name}</h3>
               <div class = "cart-item-category">For ${cart[i].type}</div>
               <span class = "cart-item-price">Price: ${cart[i].price}$</span>
