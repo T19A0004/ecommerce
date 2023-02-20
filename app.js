@@ -88,10 +88,10 @@ function ShowWomen() {
       addItemToCart(e.target.dataset.id);
     });
   });
-  document.getElementById("title").style.color = "#EE73C4";
+  document.getElementById("title").style.color = "#ffc0cb";
 
   //changecolor active
-  var hover = "li p:hover{ background-color: #EE73C4AB; color: #FFFFFF; }";
+  var hover = "li p:hover{ background-color: #ffc0cbAB; color: #FFFFFF; }";
   var style = document.createElement("style");
 
   if (style.styleSheet) {
@@ -102,7 +102,7 @@ function ShowWomen() {
 
   document.getElementsByTagName("head")[0].appendChild(style);
 
-  var active = ".active{ background-color: #EE73C4; color: #FFFFFF; }";
+  var active = ".active{ background-color: #ffc0cb; color: #FFFFFF; }";
   var style = document.createElement("style");
 
   if (style.styleSheet) {
@@ -143,10 +143,10 @@ function ShowKids() {
       addItemToCart(e.target.dataset.id);
     });
   });
-  document.getElementById("title").style.color = "#F3C913";
+  document.getElementById("title").style.color = "#7ca6da";
 
   //changecolor active
-  var hover = "li p:hover{ background-color: #F3C913AB; color: #FFFFFF; }";
+  var hover = "li p:hover{ background-color: #7ca6daAB; color: #FFFFFF; }";
   var style = document.createElement("style");
 
   if (style.styleSheet) {
@@ -157,7 +157,7 @@ function ShowKids() {
 
   document.getElementsByTagName("head")[0].appendChild(style);
 
-  var active = ".active{ background-color: #F3C913; color: #FFFFFF; }";
+  var active = ".active{ background-color: #7ca6da; color: #FFFFFF; }";
   var style = document.createElement("style");
 
   if (style.styleSheet) {
