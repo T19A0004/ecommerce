@@ -23,7 +23,7 @@ function ShowMen() {
         product[i].price +
         "</h4></br><button data-id='" +
         product[i].id +
-        "' role='button' name='buttonId' class='name noselect addToCartButton' >Add To Cart</button>";
+        "' role='button' class='name noselect addToCartButton' >Add To Cart</button>";
 
       men.append(menproduct);
     }
@@ -77,9 +77,9 @@ function ShowWomen() {
         product[i].name +
         "</h2></br> <h4>$" +
         product[i].price +
-        "</h4></br><button id='" +
+        "</h4></br><button data-id='" +
         product[i].id +
-        "' role='button' class='name noselect' onClick=reply_click(this.id)>Add To Cart</button>";
+        "' role='button' class='name noselect addToCartButton'>Add To Cart</button>";
       women.append(womenproduct);
     }
   }
@@ -127,9 +127,9 @@ function ShowKids() {
         product[i].name +
         "</h2></br> <h4 class='product-price'>$" +
         product[i].price +
-        "</h4></br><button id='" +
+        "</h4></br><button data-id='" +
         product[i].id +
-        "' role='button' class='name noselect' onClick=reply_click(this.id)>Add To Cart</button>";
+        "' role='button' class='name noselect addToCartButton'>Add To Cart</button>";
       kids.append(kidsproduct);
     }
   }
@@ -217,7 +217,6 @@ function setup() {
 
 const cartTotalValue = document.getElementById("cart-total-value");
 // const cartCountInfo = document.getElementById("cart-count-info");
-// const modalCart = document.querySelector("#addedCart");
 
 function storeToLocal(data) {
   localStorage.setItem("products", JSON.stringify(data));
@@ -232,15 +231,6 @@ storeToLocal(product);
 
 let products = JSON.parse(localStorage.getItem("products"));
 let cart = JSON.parse(localStorage.getItem("cart"));
-
-// storeToLocal(product);
-
-let BiD;
-function reply_click(clicked_id) {
-  BiD = clicked_id;
-}
-
-document.querySelector(".name").addEventListener("click", reply_click(BiD));
 
 //Add product in the cart
 function addItemToCart(productId) {
@@ -277,10 +267,7 @@ function setCartItems() {
               <span class = "cart-item-price">${cart[i].price}</span>
           </div>
         
-          <button data-id="${cart[i].id}" type = "button" class = "cart-item-del-btn">x
-              <i class = "fas fa-times"></i>
-          </button>
-        `;
+          <button data-id="${cart[i].id}" type = "button" class = "cart-item-del-btn">x</button>`;
       products += product;
     }
 
@@ -294,45 +281,6 @@ function setCartItems() {
   }
 }
 
-// let buttonId = document.querySelector("main div button");
-
-// $(document).ready(function () {
-//   $(buttonId).click(function () {
-//     var idArr = [];
-//     $("i").each(function () {
-//       idArr.push($(this).attr("id"));
-//     });
-
-//     // Join array elements and display in alert
-//     alert(idArr.join(", "));
-//   });
-// });
-
-// purchase product
-// function purchaseProduct(e) {
-//   if (e.target.classList.contains("name noselect")) {
-//     let product = e.target.parentElement.parentElement;
-//     getProductInfo(product);
-//   }
-// }
-
-// get product info after add to cart button click
-// function getProductInfo(product) {
-//   let productInfo = {
-//     id: product.querySelector("span").id,
-//     image: product.querySelector(".product-img img").src,
-//     name: product.querySelector(".product-name").textContent,
-//     type: product.querySelector(".product-type").textContent,
-//     price: product.querySelector(".product-price").textContent,
-//   };
-//   addItemToCart(productInfo.id);
-// }
-
-// const spanId = product.querySelector("span").id;
-// let PiD = spanId.getAttribute("id");
-
-// console.log(PiD);
-
 // //Removing product from the cart
 function removeItemFromCart(productId) {
   let temp = JSON.parse(localStorage.getItem("cart")).filter(
@@ -340,34 +288,4 @@ function removeItemFromCart(productId) {
   );
   localStorage.setItem("cart", JSON.stringify(temp));
   setCartItems();
-}
-
-// //Update product quantity
-// function updateQuantity(productId, quantity) {
-//   for (let product of cart) {
-//     if (product.id == productId) {
-//       product.quantity = quantity;
-//     }
-//   }
-//   localStorage.setItem("cart", JSON.stringify(cart));
-// }
-
-// //Total Sum
-// function totalSum() {
-//   let temp = cart.map(function (item) {
-//     return parseInt(item.price);
-//   });
-
-//   let sum = temp.reduce(function (prev, next) {
-//     return prev + next;
-//   });
-// }
-
-// totalSum();
-
-// get all the products info if there is any in the local storage
-function getProductFromStorage() {
-  return localStorage.getItem("cart")
-    ? JSON.parse(localStorage.getItem("cart"))
-    : [];
 }
