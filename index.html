@@ -9,67 +9,69 @@
   </head>
 
   <body>
-    <div id="myModal" style="display: none">
-      <div id="test" style="height: 300px; width: 300px; background-color: red">
-        Test
+    <div class="fon">
+      <div id="myModal" style="display: none">
+        <div
+          id="test"
+          style="height: 300px; width: 300px; background-color: red"
+        >
+          Test
+        </div>
       </div>
-    </div>
 
-    <header>
-      <span class="title">
-        <img src="images/m-logo-suit.svg" />
-        <h1 id="title">Suit Store</h1>
-      </span>
-    </header>
-    <section id="flexContainer">
-      <nav>
-        <ul>
-          <li class="active"><p id="ForMen">Men</p></li>
-          <li><p id="ForWomen">Women</p></li>
-          <li><p id="ForKids">Kids</p></li>
-        </ul>
-      </nav>
-      <section id="content">
-        <h2>Products</h2>
-        <main></main>
+      <header>
+        <span class="title">
+          <img src="images/m-logo-suit.svg" />
+          <h1 id="title">Suit Store</h1>
+        </span>
+      </header>
+      <section id="flexContainer">
+        <nav>
+          <ul>
+            <li class="active"><p id="ForMen">Men</p></li>
+            <li><p id="ForWomen">Women</p></li>
+            <li><p id="ForKids">Kids</p></li>
+          </ul>
+        </nav>
+        <section id="content">
+          <h2>Products</h2>
+          <main></main>
+        </section>
+        <aside></aside>
       </section>
-      <aside></aside>
-    </section>
-    <footer class="footer">
-      <div class="waves">
-        <div class="wave" id="wave1"></div>
-        <div class="wave" id="wave2"></div>
-        <div class="wave" id="wave3"></div>
-        <div class="wave" id="wave4"></div>
-      </div>
+      <footer class="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
 
-      <ul class="menu">
-        <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">About us</a></li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">Contact us</a>
-        </li>
-      </ul>
-    </footer>
-    <!-- <div id="cart">
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">About us</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Contact us</a>
+          </li>
+        </ul>
+      </footer>
+      <!-- <div id="cart">
       <img src="/images/cart.svg" />
     </div> -->
-    <div id="cart">
-      <img id="modal-opener" src="/images/cart.svg" />
-      <span id="cart-count-info"></span>
-    </div>
-    <div id="modal-root">
-      <div class="modal">
-        <h3>Cart</h3>
-        <div id="addedCart"></div>
-        <h3>Total: <span id="cart-total-value"></span> $</h3>
+      <div id="cart">
+        <img id="modal-opener" src="/images/cart.svg" />
+        <span id="cart-count-info"></span>
       </div>
+      <div id="modal-root">
+        <div class="modal">
+          <h3>Cart</h3>
+          <div id="addedCart"></div>
+          <h3>Total: <span id="cart-total-value"></span> $</h3>
+        </div>
+      </div>
+      <script src="./app.js" type="module"></script>
     </div>
-    <script src="./app.js" type="module"></script>
-    <!-- <script>
-      function reply_click(clicked_id) {
-        console.log(clicked_id);
-      }
-    </script> -->
   </body>
 </html>

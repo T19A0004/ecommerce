@@ -5,11 +5,18 @@ html {
 body {
   font-family: Arial, Helvetica, Sans-Serif;
   font-size: 20px;
-  background: rgb(255, 255, 255);
+  /* background: rgb(255, 255, 255); */
+  background: linear-gradient(to top, #6bc5d2, #cbf1f5 55%);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   position: relative;
+}
+
+.fon {
+  background-image: url(./images/sakura.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 span {
@@ -32,6 +39,8 @@ main div {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   padding: 10px;
   margin: 15px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 main div:hover {
@@ -49,7 +58,7 @@ h4 {
   align-items: center;
   justify-content: center;
   position: fixed;
-  right: 10%;
+  right: 5%;
   top: 80%;
   width: 70px;
   height: 70px;
@@ -205,8 +214,6 @@ header {
   min-height: 100px;
   margin: 0;
   padding: 5px;
-  background-image: url(./images/sakura.png);
-  background-size: cover;
 }
 
 .title {
@@ -260,7 +267,6 @@ li p {
 }
 
 aside {
-  background: white;
   /* Shorthand property specifying flex-grow, flex-shrink, and flex-basis. */
   flex: 1 1 15%;
   min-width: 150px;
@@ -283,8 +289,8 @@ aside {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
