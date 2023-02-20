@@ -75,7 +75,7 @@ h4 {
   left: 0;
   top: 0;
   width: 0px;
-  height: 0px;
+  height: px;
   opacity: 0;
   transition: opacity 0.15s ease-out, width 0s linear 0.15s,
     height 0s linear 0.15s;
@@ -89,8 +89,10 @@ h4 {
 }
 
 .modal {
+  overflow: scroll;
   margin: 0 auto;
-  width: 600px;
+  width: 60%;
+  height: 70%;
   background-color: white;
   padding: 20px;
   border-radius: 5px;
