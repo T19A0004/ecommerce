@@ -83,6 +83,11 @@ function ShowWomen() {
       women.append(womenproduct);
     }
   }
+  document.querySelectorAll(".addToCartButton").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      addItemToCart(e.target.dataset.id);
+    });
+  });
   document.getElementById("title").style.color = "#EE73C4";
 
   //changecolor active
@@ -133,6 +138,11 @@ function ShowKids() {
       kids.append(kidsproduct);
     }
   }
+  document.querySelectorAll(".addToCartButton").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      addItemToCart(e.target.dataset.id);
+    });
+  });
   document.getElementById("title").style.color = "#F3C913";
 
   //changecolor active
