@@ -302,3 +302,14 @@ function removeItemFromCart(productId) {
   localStorage.setItem("cart", JSON.stringify(temp));
   setCartItems();
 }
+
+//Buy on click
+function buySuit() {
+  if (cart != "") {
+    alert("Thank you for your order!");
+  } else {
+    alert("You are not select anything yet!");
+  }
+}
+
+document.querySelector(".modal .button").addEventListener("click", buySuit);
