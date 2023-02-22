@@ -274,7 +274,7 @@ function setCartItems() {
               <img class= "cart-item-image" src = "./images/${cart[i].image}" alt = "product image">
               <div class="info">
               <h3 class = "cart-item-name">${cart[i].name}</h3>
-              <div class = "cart-item-category">For ${cart[i].type}</div>
+              <h4 class = "cart-item-category">For ${cart[i].type}</h4>
               <span class = "cart-item-price">Price: ${cart[i].price}$</span>
               </div>
               <div>
@@ -313,3 +313,25 @@ function buySuit() {
 }
 
 document.querySelector(".modal .button").addEventListener("click", buySuit);
+
+//Dark Mode
+$(".toggle-overlay").on("click", function () {
+  let $t = $(".toggle");
+  let $b = $("body");
+  let $m = $(".modal");
+  if ($t.hasClass("night")) {
+    $t.removeClass("night");
+    $t.addClass("day");
+    $b.removeClass("night");
+    $b.addClass("day");
+    $m.removeClass("night");
+    $m.addClass("day");
+  } else {
+    $t.addClass("night");
+    $t.removeClass("day");
+    $b.addClass("night");
+    $b.removeClass("day");
+    $m.addClass("night");
+    $m.remove("day");
+  }
+});
