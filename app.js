@@ -319,6 +319,8 @@ $(".toggle-overlay").on("click", function () {
   let $t = $(".toggle");
   let $b = $("body");
   let $m = $(".modal");
+  let $l = $(".logo");
+  let $mt = $(".mainTitle");
   if ($t.hasClass("night")) {
     $t.removeClass("night");
     $t.addClass("day");
@@ -326,12 +328,20 @@ $(".toggle-overlay").on("click", function () {
     $b.addClass("day");
     $m.removeClass("night");
     $m.addClass("day");
+    $l.removeClass("night");
+    $l.addClass("day");
+    $mt.removeClass("night");
+    $mt.addClass("day");
   } else {
     $t.addClass("night");
     $t.removeClass("day");
     $b.addClass("night");
     $b.removeClass("day");
     $m.addClass("night");
-    $m.remove("day");
+    $m.removeClass("day");
+    $l.addClass("night");
+    $l.removeClass("day");
+    $mt.addClass("night");
+    $mt.removeClass("day");
   }
 });
