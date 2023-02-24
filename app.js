@@ -59,7 +59,7 @@ function ShowMen() {
   document.getElementsByTagName("head")[0].appendChild(style);
 
   //LogoColor
-  document.querySelector(".title img").src = "images/m-logo-suit.svg";
+  document.querySelector(".logo").src = "images/m-logo-suit.svg";
 }
 
 function ShowWomen() {
@@ -114,7 +114,7 @@ function ShowWomen() {
   document.getElementsByTagName("head")[0].appendChild(style);
 
   //LogoColor
-  document.querySelector(".title img").src = "images/w-logo-suit.svg";
+  document.querySelector(".logo").src = "images/w-logo-suit.svg";
 }
 
 function ShowKids() {
@@ -169,7 +169,7 @@ function ShowKids() {
   document.getElementsByTagName("head")[0].appendChild(style);
 
   //LogoColor
-  document.querySelector(".title img").src = "images/k-logo-suit.svg";
+  document.querySelector(".logo").src = "images/k-logo-suit.svg";
 }
 
 ShowMen();
@@ -322,6 +322,7 @@ $(".toggle-overlay").on("click", function () {
   let $l = $(".logo");
   let $mt = $(".mainTitle");
   if ($t.hasClass("night")) {
+    $(".logo").attr("src", "images/m-logo-suit.svg");
     $t.removeClass("night");
     $t.addClass("day");
     $b.removeClass("night");
@@ -333,6 +334,7 @@ $(".toggle-overlay").on("click", function () {
     $mt.removeClass("night");
     $mt.addClass("day");
   } else {
+    $(".logo").attr("src", "images/m-logo-suit-white.svg");
     $t.addClass("night");
     $t.removeClass("day");
     $b.addClass("night");
