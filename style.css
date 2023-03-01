@@ -23,10 +23,6 @@ body {
   background-repeat: no-repeat;
 }
 
-span {
-  color: aqua;
-}
-
 main {
   display: flex;
   flex-wrap: wrap;
@@ -230,14 +226,13 @@ header {
   align-items: center;
 }
 
-.title h1 {
+.mainTitle {
   font-size: 120px;
   font-family: "Gambetta", serif;
   letter-spacing: -3px;
   transition: 700ms ease;
   font-variation-settings: "wght" 311;
   margin: 0;
-  color: rgb(0, 0, 0);
   outline: none;
   text-align: center;
 }

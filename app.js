@@ -1,5 +1,5 @@
 import product from "./products.json" assert { type: "json" };
-
+let theme = "day";
 //Change product
 
 document.getElementById("ForMen").addEventListener("click", ShowMen);
@@ -33,7 +33,6 @@ function ShowMen() {
       addItemToCart(e.target.dataset.id);
     });
   });
-  document.getElementById("title").style.color = "#2D2D2D";
 
   //changecolor active
   var hover = "li p:hover{ background-color: #2D2D2DAB; color: #FFFFFF; }";
@@ -59,7 +58,13 @@ function ShowMen() {
   document.getElementsByTagName("head")[0].appendChild(style);
 
   //LogoColor
-  document.querySelector(".logo").src = "images/m-logo-suit.svg";
+  if (theme == "night") {
+    document.querySelector(".logo").src = "images/m-logo-suit-white.svg";
+    document.querySelector(".mainTitle").style.color = "#FFFFFF";
+  } else {
+    document.querySelector(".logo").src = "images/m-logo-suit.svg";
+    document.querySelector(".mainTitle").style.color = "#2D2D2D";
+  }
 }
 
 function ShowWomen() {
@@ -322,28 +327,24 @@ $(".toggle-overlay").on("click", function () {
   let $l = $(".logo");
   let $mt = $(".mainTitle");
   if ($t.hasClass("night")) {
-    $(".logo").attr("src", "images/m-logo-suit.svg");
+    $l.attr("src", "images/m-logo-suit.svg");
+    $mt.css("color", "#2d2d2d");
     $t.removeClass("night");
     $t.addClass("day");
     $b.removeClass("night");
     $b.addClass("day");
     $m.removeClass("night");
     $m.addClass("day");
-    $l.removeClass("night");
-    $l.addClass("day");
-    $mt.removeClass("night");
-    $mt.addClass("day");
+    theme = "day";
   } else {
-    $(".logo").attr("src", "images/m-logo-suit-white.svg");
+    $l.attr("src", "images/m-logo-suit-white.svg");
+    $mt.css("color", "#FFFFFF");
     $t.addClass("night");
     $t.removeClass("day");
     $b.addClass("night");
     $b.removeClass("day");
     $m.addClass("night");
     $m.removeClass("day");
-    $l.addClass("night");
-    $l.removeClass("day");
-    $mt.addClass("night");
-    $mt.removeClass("day");
+    theme = "night";
   }
 });
