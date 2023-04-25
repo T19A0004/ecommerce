@@ -205,7 +205,9 @@ function setup() {
   let modalRoot = get("modal-root");
   let button = get("modal-opener");
   let modal = query(".modal");
+  let clsmodal = get("closeModalBtn");
 
+  clsmodal.addEventListener("click", rootClick);
   modalRoot.addEventListener("click", rootClick);
   button.addEventListener("click", openModal);
   modal.addEventListener("click", modalClick);
@@ -246,7 +248,7 @@ storeToLocal(product);
 
 let products = JSON.parse(localStorage.getItem("products"));
 let cart = JSON.parse(localStorage.getItem("cart"));
-
+console.log(cart);
 //Add product in the cart
 function addItemToCart(productId) {
   let product = products.find(function (product) {
@@ -291,11 +293,13 @@ function setCartItems() {
 
     added.innerHTML = products;
     cartTotalValue.innerHTML = total;
-    document.querySelectorAll(".cart-item-del-btn").forEach((btn) => {
-      btn.addEventListener("click", (e) => {
-        removeItemFromCart(e.target.dataset.id);
+    let buttons = document.querySelectorAll(".cart-item-del-btn");
+    for (let i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener("click", function (e) {
+        let productId = e.target.dataset.id;
+        removeItemFromCart(productId);
       });
-    });
+    }
   }
 }
 
