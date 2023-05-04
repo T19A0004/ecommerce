@@ -248,9 +248,9 @@ storeToLocal(product);
 
 let products = JSON.parse(localStorage.getItem("products"));
 let cart = JSON.parse(localStorage.getItem("cart"));
-console.log(cart);
 //Add product in the cart
 function addItemToCart(productId) {
+  cart = JSON.parse(localStorage.getItem("cart"));
   let product = products.find(function (product) {
     return product.id == productId;
   });
@@ -314,6 +314,7 @@ function removeItemFromCart(productId) {
 
 //Buy on click
 function buySuit() {
+  cart = JSON.parse(localStorage.getItem("cart"))
   if (cart != "") {
     alert("Thank you for your order!");
   } else {
