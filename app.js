@@ -1,4 +1,4 @@
-import product from "./products.json" assert { type: "json" };
+import product from "./products.json" with { type: "json" };
 let theme = "day";
 //Change product
 
